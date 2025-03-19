@@ -5,7 +5,7 @@ import { Label } from '@/components/ui/label';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
-function SignupForm() {
+function LoginForm() {
   const {
     register,
     handleSubmit,
@@ -20,17 +20,6 @@ function SignupForm() {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
           <div className="flex flex-col w-full gap-2">
-            <div>
-              <Input
-                placeholder="Jon Doe"
-                {...register('name', { required: true })}
-              />
-              {errors.name && (
-                <span className="text-sm text-red-500">
-                  This field is required
-                </span>
-              )}
-            </div>
             <div>
               <Input
                 placeholder="jondoe@gmail.com"
@@ -68,4 +57,4 @@ function SignupForm() {
   );
 }
 
-export default SignupForm;
+export default LoginForm;

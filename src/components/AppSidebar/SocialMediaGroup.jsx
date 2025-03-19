@@ -14,7 +14,14 @@ import {
   SidebarMenuSubButton,
   SidebarMenu,
 } from '@/components/ui/sidebar';
-import { ChevronRight, Instagram } from 'lucide-react';
+import {
+  ChevronRight,
+  Instagram,
+  Linkedin,
+  Twitter,
+  X,
+  Youtube,
+} from 'lucide-react';
 import {
   Collapsible,
   CollapsibleContent,
@@ -33,8 +40,85 @@ const socialMediaList = [
         link: 'schedule',
       },
       {
+        name: 'All Posts',
+        link: 'allposts',
+      },
+      {
         name: 'Insights',
         link: 'insights',
+      },
+      {
+        name: 'Inbox',
+        link: 'inbox',
+      },
+    ],
+  },
+  {
+    name: 'Linked In',
+    link: 'linkedin',
+    logo: <Linkedin />,
+    childern: [
+      {
+        name: 'Schedule',
+        link: 'schedule',
+      },
+      {
+        name: 'All Posts',
+        link: 'allposts',
+      },
+      {
+        name: 'Insights',
+        link: 'insights',
+      },
+      {
+        name: 'Inbox',
+        link: 'inbox',
+      },
+    ],
+  },
+  {
+    name: 'X.com',
+    link: 'x',
+    logo: <Twitter />,
+    childern: [
+      {
+        name: 'Schedule',
+        link: 'schedule',
+      },
+      {
+        name: 'All Posts',
+        link: 'allposts',
+      },
+      {
+        name: 'Insights',
+        link: 'insights',
+      },
+      {
+        name: 'Inbox',
+        link: 'inbox',
+      },
+    ],
+  },
+  {
+    name: 'Youtube',
+    link: 'youtube',
+    logo: <Youtube />,
+    childern: [
+      {
+        name: 'Schedule',
+        link: 'schedule',
+      },
+      {
+        name: 'All Posts',
+        link: 'allposts',
+      },
+      {
+        name: 'Insights',
+        link: 'insights',
+      },
+      {
+        name: 'Inbox',
+        link: 'inbox',
       },
     ],
   },

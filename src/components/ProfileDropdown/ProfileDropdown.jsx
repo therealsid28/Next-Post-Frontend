@@ -23,7 +23,9 @@ function ProfileDropdown() {
           <DropdownMenuItem>
             <Link to="profile">Profile</Link>
           </DropdownMenuItem>
-          <DropdownMenuItem>Subscription</DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link to="/plan">Plan</Link>
+          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </>

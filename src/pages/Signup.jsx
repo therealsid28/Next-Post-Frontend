@@ -21,7 +21,9 @@ function Signup() {
             <span className="text-2xl text-center block my-2">Signup</span>
           </CardTitle>
           <CardDescription className="text-center">
-            Signup to Next Post and manage all your social media easily
+            Join Next Post, the ultimate social media management tool. Plan,
+            schedule, and analyze your posts across multiple platforms with
+            ease.
           </CardDescription>
         </CardHeader>
         <CardContent>

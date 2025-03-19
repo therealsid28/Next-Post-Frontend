@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/sidebar';
 import SocialMediaGroup from './SocialMediaGroup';
 import Logo from './Logo';
-import { Home } from 'lucide-react';
+import { Home, Settings } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function AppSidebar() {
@@ -22,12 +22,13 @@ export function AppSidebar() {
         <Logo />
       </SidebarHeader>
       <SidebarContent>
+        {/* Profile Section */}
         <SidebarGroup>
           <SidebarGroupLabel>Dashboard</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               <SidebarMenuItem>
-                <Link to="/">
+                <Link to="/app">
                   <SidebarMenuButton className="cursor-pointer flex items-center">
                     <span>
                       <Home size={22} />
@@ -36,10 +37,22 @@ export function AppSidebar() {
                   </SidebarMenuButton>
                 </Link>
               </SidebarMenuItem>
+              <SidebarMenuItem>
+                <Link to="/app/settings">
+                  <SidebarMenuButton className="cursor-pointer flex items-center">
+                    <span>
+                      <Settings size={22} />
+                    </span>
+                    <span className="text-md">Settings</span>
+                  </SidebarMenuButton>
+                </Link>
+              </SidebarMenuItem>
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+        {/* Social Media Section */}
         <SocialMediaGroup />
+        {/* Social Medai Section End */}
       </SidebarContent>
       <SidebarFooter />
     </Sidebar>
